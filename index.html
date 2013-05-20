@@ -2,24 +2,32 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
 </head>
 <body>
 
-    <script type="text/x-handlebars">
-        <div class="container">
+    <!--<script type="text/x-handlebars">-->
             <div class="row-fluid">
-                <ul class="nav nav-list span3 well">
-                    {{#each model}}
-                    <li>{{#linkTo "user" this}}{{first}}{{/linkTo}}</li>
-                    {{/each}}
-                </ul>
-                <div class="span9 well">{{outlet}}</div>
+                <div class="span12 toolbar"></div>
             </div>
-        </div>
-    </script>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span2 left-column"></div>
+                    <div class="span3 left-center-column"></div>
+                    <div class="span4 right-center-column"></div>
+                    <div class="span3">
+                        <div class="row-fluid">
+                            <div class="span12 right-column"></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12 right-column right-down-column"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--</script>-->
 
     <script type="text/x-handlebars" id="user">
         <h2>
