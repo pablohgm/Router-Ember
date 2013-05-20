@@ -1,34 +1,35 @@
 /* Put your CSS here */
 html, body {
     height: 100%;
+    margin: 0px;
 }
 
 .left-column {
     background-color: #e6e6e6;
-    min-height: 900px !important;
 }
 
 .left-center-column {
     background-color: #7ab5d3;
-    min-height: 900px !important;
 }
 
 .right-column {
     background-color: #faf2cc;
-    min-height: 700px !important;
 }
 
 .right-center-column {
     background-color: #51a351;
-    min-height: 900px !important;
 }
 
 .right-down-column{
     background-color: #f89406;
     margin-top: 5px;
-    min-height: 200px !important;
 }
 
 .toolbar{
-    background-color: #bd362f;
+    background-color: #ffffff;
+    min-height: 62px;
+}
+
+.row-fluid [class*="span"] {
+    /*margin-left: 0 !important;*/
 }

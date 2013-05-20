@@ -2,18 +2,22 @@
 <html>
 <head>
     <title></title>
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
 </head>
 <body>
 
-    <!--<script type="text/x-handlebars">-->
+    <script type="text/x-handlebars">
             <div class="row-fluid">
-                <div class="span12 toolbar"></div>
+                <div class="span12">
+                    <form class="toolbar navbar-search pull-right">
+                        <input type="text" class="search-query" placeholder="Search">
+                    </form>
+                </div>
             </div>
             <div class="container-fluid">
-                <div class="row-fluid">
+                <div class="row-fluid no-space">
                     <div class="span2 left-column"></div>
                     <div class="span3 left-center-column"></div>
                     <div class="span4 right-center-column"></div>
@@ -27,7 +31,7 @@
                     </div>
                 </div>
             </div>
-    <!--</script>-->
+    </script>
 
     <script type="text/x-handlebars" id="user">
         <h2>
