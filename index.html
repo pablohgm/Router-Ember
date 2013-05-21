@@ -9,24 +9,28 @@
 <body>
 
     <script type="text/x-handlebars">
-            <div class="row-fluid">
-                <div class="span12">
-                    <form class="toolbar navbar-search pull-right">
-                        <input type="text" class="search-query" placeholder="Search">
-                    </form>
+            <div class="navbar navbar-inverse navbar-fixed-top" >
+                <div class="navbar-inner" >
+                    <div class="container-fluid" >
+                        <a class="brand" href="#">TracToc</a>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row-fluid no-space">
-                    <div class="span2 left-column"></div>
-                    <div class="span3 left-center-column"></div>
-                    <div class="span4 right-center-column"></div>
-                    <div class="span3">
+            <div class="main-container container-fluid" >
+                <div class="row-fluid">
+                    <div class="left-menu span2 nav nav-list" >
+                        {{#each model}}
+                        <p>{{#linkTo "user" this}}{{first}}{{/linkTo}}</p>
+                        {{/each}}
+                    </div>
+                    <div class="left-menu-items span3" >
+                    </div>
+                    <div class="center-area span4" >
+                        {{outlet}}
+                    </div>
+                    <div class="right-menu span3" >
                         <div class="row-fluid">
-                            <div class="span12 right-column"></div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span12 right-column right-down-column"></div>
+                            <div class="top-menu span12"></div>
                         </div>
                     </div>
                 </div>
